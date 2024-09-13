@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[doi=false,isbn=false,url=false,eprint=false, style=authoryear]{biblatex}
+\addbibresource{statement_of_purpose.bib}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \vspace*{-1in}  % Move the title up by reducing the top space
+  \centering
+  {\Large \bfseries\textsc{\@title}}
+  \HRule\par%
+  \textit{\@author \hfill \@date}
+  \par
+}
+\makeatother
+
+% Title
+\title{Statement of Purpose}
+\author{Hayden Schrauff}
+\date{}
+
+\begin{document}
+    \maketitle
+    \vspace{0.1in}
+    
+My research interest is to explore how dynamic interactions between customers, suppliers, and indirect participants affect market structure. To explore this topic, I am interested in using both large-scale observational and experimental data to apply empirical methods to theoretical models. I have dedicated myself to build the necessary statistical, mathematical, and data-wrangling skills necessary to answer these questions from my time as an undergraduate student at UT-Austin to a  predoctoral fellowship at HBS. \\
+
+My specific interest in how customers and suppliers interact is in how each party learns about the other and updates their beliefs. For example, during my predoctoral fellowship I worked with Professor Alex MacKay on exploring the impact of dynamic, algorithmic pricing. \parencite{https://doi.org/10.3982/ECTA16180}
+
+\printbibliography
+
+\end{document}
